@@ -17,3 +17,16 @@
 .subtitle {
   font-size: 20px;
 }
+
+.language {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 50%;
+
+  text {
+    color: #000000;
+  }
+}
