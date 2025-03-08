@@ -1,4 +1,3 @@
-import { useState } from '@lynx-js/react';
 import NASALogo from '../../assets/nasa-logo.png';
 import { Locale } from '../../enums/locale.js';
 import { i18n } from '../../i18n.js';
@@ -6,9 +5,12 @@ import { locales } from '../../utils/constants.js';
 import { formatLocale } from '../../utils/formatLocale.js';
 import './header.css';
 
-export function Header() {
-  const [locale, setLocale] = useState<Locale>(Locale.en);
+interface Props {
+  locale: Locale;
+  onChangeLanguage: (locale: Locale) => void;
+}
 
+export function Header({ locale, onChangeLanguage }: Props) {
   const getNextLocale = (locale: Locale) => {
     const index = locales.indexOf(locale);
     return locales[(index + 1) % locales.length];
@@ -25,11 +27,10 @@ export function Header() {
         <text
           bindtap={async () => {
             const nextLocale = getNextLocale(locale);
-            await i18n.changeLanguage(nextLocale);
-            setLocale(nextLocale);
+            onChangeLanguage(nextLocale);
           }}
         >
-          {formatLocale(getNextLocale(locale))}
+          {formatLocale(locale)}
         </text>
       </view>
     </view>
