@@ -1,0 +1,23 @@
+.ButtonSearch, .ButtonLoading {
+  background-color: green;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.ButtonLoading {
+  background-color: #CECECE;
+}
+
+
+.loader {
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #223554;
+  border-right-color: #ECECEC;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+

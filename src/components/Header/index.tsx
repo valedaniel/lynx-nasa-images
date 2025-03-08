@@ -28,7 +28,6 @@ export function Header() {
             await i18n.changeLanguage(nextLocale);
             setLocale(nextLocale);
           }}
-          className="btn"
         >
           {formatLocale(getNextLocale(locale))}
         </text>

@@ -18,8 +18,19 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 text {
   color: var(--color-text);
+}
+
+.TopPanel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 10px;
+  margin-top: 30px;
 }
