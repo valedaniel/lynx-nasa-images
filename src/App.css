@@ -1,0 +1,25 @@
+:root {
+  background-color: #000;
+  --color-text: #fff;
+}
+
+.Background {
+  position: fixed;
+  background: linear-gradient(135deg, #2C4163, #263A5B, #213452);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+text {
+  color: var(--color-text);
+}
