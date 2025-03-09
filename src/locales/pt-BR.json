@@ -2,5 +2,6 @@
   "searchImages": "Buscar Imagens",
   "nasa": "NASA",
   "search": "Buscar",
-  "whatWouldYouLikeToFind": "O que você gostaria de encontrar?"
+  "whatWouldYouLikeToFind": "O que você gostaria de encontrar?",
+  "yourSearchDidNotMatchAnyImage": "Sua pesquisa não correspondeu a nenhuma imagem"
 }

@@ -1,3 +1,4 @@
+import { i18n } from '../../i18n.js';
 import type { Item } from '../../types/Item.js';
 import { ListItem } from './Item/index.jsx';
 import './list.images.css';
@@ -15,6 +16,14 @@ export function ListImages({ items, loading }: ListImagesProps) {
 
     return items.map((item) => <ListItem item={item} />);
   };
+
+  if (items.length === 0) {
+    return (
+      <view className="NotFoundContainer">
+        <text>{i18n.t('yourSearchDidNotMatchAnyImage')}</text>
+      </view>
+    );
+  }
 
   return (
     <view className="Container">
