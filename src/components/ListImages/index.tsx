@@ -4,10 +4,11 @@ import './list.images.css';
 
 interface ListImagesProps {
   items?: Item[];
+  loading?: boolean;
 }
 
-export function ListImages({ items }: ListImagesProps) {
-  if (!items) return null;
+export function ListImages({ items, loading }: ListImagesProps) {
+  if (!items || loading) return null;
 
   const renderItems = () => {
     if (!items || items.length === 0) return null;

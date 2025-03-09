@@ -1,5 +1,5 @@
+import { useMemo, useState } from '@lynx-js/react';
 import { useMutation } from '@tanstack/react-query';
-import { useState } from 'react';
 import './App.css';
 import { ButtonSearch } from './components/ButtonSearch/index.jsx';
 import { Header } from './components/Header/index.jsx';
@@ -23,6 +23,10 @@ export function App() {
     },
   });
 
+  const loading = useMemo(() => {
+    return status === 'pending';
+  }, [status]);
+
   return (
     <view>
       <view className="Background" />
@@ -43,10 +47,13 @@ export function App() {
           <ButtonSearch
             disabled={!searchValue}
             onPress={() => mutate()}
-            loading={status === 'pending'}
+            loading={loading}
           />
         </view>
-        <ListImages items={responseImages?.collection?.items} />
+        <ListImages
+          items={responseImages?.collection?.items}
+          loading={loading}
+        />
       </view>
     </view>
   );
