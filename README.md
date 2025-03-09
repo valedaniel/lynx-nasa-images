@@ -70,5 +70,5 @@ Com o LynxExplorer App instalado no dispositivo, leia o QR Code ou copie a URL p
 Até o momento da criação deste projeto, não estava previsto em documentação a compatibilidade com variáveis de ambiente.
 
 ## Em Funcionamento
-https://github.com/user-attachments/assets/9e653b49-d2ef-4ecd-8604-220b48a225f5
+[Vídeo](https://github.com/user-attachments/assets/030d2c7f-d838-455a-b9dc-f881c9199d91)
 
