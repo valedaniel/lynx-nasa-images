@@ -30,7 +30,7 @@ export function Header({ locale, onChangeLanguage }: Props) {
             onChangeLanguage(nextLocale);
           }}
         >
-          {formatLocale(locale)}
+          {formatLocale(getNextLocale(locale))}
         </text>
       </view>
     </view>
