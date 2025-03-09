@@ -4,9 +4,14 @@ import './button.search.scss';
 interface ButtonSearchProps {
   loading?: boolean;
   disabled?: boolean;
+  onPress?: () => void;
 }
 
-export function ButtonSearch({ loading, disabled }: ButtonSearchProps) {
+export function ButtonSearch({
+  loading,
+  disabled,
+  onPress,
+}: ButtonSearchProps) {
   if (loading) {
     return (
       <view className="ButtonLoading">
@@ -21,6 +26,7 @@ export function ButtonSearch({ loading, disabled }: ButtonSearchProps) {
       style={{
         backgroundColor: disabled ? '#ccc' : undefined,
       }}
+      bindtap={onPress}
     >
       <text>{i18n.t('search')}</text>
     </view>
