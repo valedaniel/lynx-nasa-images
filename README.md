@@ -62,3 +62,7 @@ Com o LynxExplorer App instalado no dispositivo, leia o QR Code ou copie a URL p
 - `npm run dev`: Executa o servidor de desenvolvimento.
 - `npm run build`: Realiza o build do projeto.
 - `npm run format`: Formata o código utilizando Prettier.
+
+## Ponto de Atenção
+
+Até o momento da criação deste projeto, não estava previsto em documentação a compatibilidade com variáveis de ambiente.
