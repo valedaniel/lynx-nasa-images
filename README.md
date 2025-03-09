@@ -19,6 +19,8 @@ O LynxJS é um framework JavaScript de código aberto desenvolvido pela ByteDanc
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Scripts Disponíveis](#scripts-disponíveis)
+- [Ponto de Atenção](#ponto-de-atenção)
+- [Em Funcionamento](#em-funcionamento)
 
 ## Instalação
 
@@ -66,3 +68,7 @@ Com o LynxExplorer App instalado no dispositivo, leia o QR Code ou copie a URL p
 ## Ponto de Atenção
 
 Até o momento da criação deste projeto, não estava previsto em documentação a compatibilidade com variáveis de ambiente.
+
+## Em Funcionamento
+https://github.com/user-attachments/assets/97e0d1c6-6171-4d60-afe6-fa751bdcff0b
+
